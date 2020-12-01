@@ -1,0 +1,97 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(../);
+}
+body{
+  font-family: 'Kumbh Sans', sans-serif;
+}
+#contenido{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+  background-position: -500px -500px, calc(100vw - 500px) 500px;
+  background-repeat: no-repeat, no-repeat;
+}
+#card{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 375px;
+  border-radius: 14px;
+  background-color: #fff;
+  --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+#card .top{
+  height: 140px;
+  width: 100%;
+  border-radius: 14px 14px 0px 0px;
+  background-image: url(../images/bg-pattern-card.svg);
+}
+#card .card_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: calc(375px - 140px);
+}
+#card .card_content .image{
+  width: 96px;
+  height: 96px;
+  margin-top: -53px;
+  background-image: url(/images/image-victor.jpg);
+  border: 5px solid white;
+  border-radius: 1000px;
+  box-sizing: content-box;
+  margin-bottom: 23px;
+}
+#card .card_content .title{
+  font-size: 18px;
+  font-weight: bold;
+  color: hsl(229, 23%, 23%);
+  margin-bottom: 11px;
+  display: flex;
+}
+#card .card_content .title span{
+  font-size: 18px;
+  font-weight: normal;
+  color: hsl(227, 10%, 46%);
+  display: block;
+  margin-left: 9px;
+}
+
+#card .card_content .subtitle {
+  font-size: 14px;
+  margin-bottom: 1rem;
+  color: hsl(227, 10%, 46%);
+  margin-bottom: 24px;
+}
+#card .card_content .stats{
+  border-top: 1px solid #e7e7e7;
+  width: 100%;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+}
+#card .card_content .stats .item{
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 11px;
+  color: hsl(227, 10%, 46%);
+  letter-spacing: 1px;
+  width: 33.3333%;
+}
+#card .card_content .stats .item .number{
+  font-weight: bold;
+  font-size: 18px;
+  color:  hsl(229, 23%, 23%);
+  margin-bottom: 6px;
+  letter-spacing: 0px;
+}
